@@ -17,12 +17,12 @@ const Banner = ({ netflixOriginals }) => {
   console.log(movie?.poster_path);
   return (
     <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12'>
-      <div className='absolute top-0 left-0 h-[95vh] w-screen -z-10'>
+      <div className='absolute top-0 left-0 h-[95vh] w-[100%] -z-10'>
         <Image
           src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
           layout='fill'
           objectFit='cover'
-          alt='Backdrop image'
+          alt={movie?.title}
         />
       </div>
 
