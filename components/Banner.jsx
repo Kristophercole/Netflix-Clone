@@ -13,8 +13,6 @@ const Banner = ({ netflixOriginals }) => {
     );
   }, [netflixOriginals]);
 
-  // console.log(movie);
-  console.log(movie?.poster_path);
   return (
     <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12'>
       <div className='absolute top-0 left-0 h-[95vh] w-[100%] -z-10'>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Thumbnail = ({ movie }) => {
+const Thumbnail = ({ movie, title }) => {
   return (
     <div
       className='relative h-28 min-w-[180px] cursor-pointer transition duration-200 ease-out md:h-36 md:min-w-[260px] md:hover:scale-105'
@@ -16,6 +16,7 @@ const Thumbnail = ({ movie }) => {
         }`}
         className='rounded-sm object-cover md:rounded'
         layout='fill'
+        alt={title}
       />
     </div>
   );

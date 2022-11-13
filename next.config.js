@@ -3,11 +3,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'image.tmdb.org',
-      },
-    ],
+    domains: ['image.tmdb.org', 'rb.gy'],
   },
 };
